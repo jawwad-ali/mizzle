@@ -63,8 +63,8 @@ const HeroSection = () => {
 
                     {/* Two Sections in Hero Section */}
                     <div className="d-block d-md-flex p-3 pe-lg-0 pe-5 gap-3 mb-5 justify-content-between">
-                        {data.map((d) => (
-                            <div className="col-lg-6 me-0 mt-3">
+                        {data.map((d, i) => (
+                            <div className="col-lg-6 me-0 mt-3" key={i}>
                                 <div className='d-flex'>
                                     <div>
                                         <Image src={d.Img} alt="Pointer" />
@@ -82,8 +82,8 @@ const HeroSection = () => {
 
                 {/* Right Side */}
                 <div className="col-lg-5 position-relative">
-                    {images.map((data) => (
-                        <Image src={data.img} alt="Images" className={data.style} />
+                    {images.map((data, i) => (
+                        <Image key={i} src={data.img} alt="Images" className={data.style} />
                     ))}
                 </div>
             </div>
