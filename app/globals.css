@@ -1,33 +1,79 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.logo {
+  height: 40px;
+  width: 136px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.navListContainer {
+  margin-left: 88px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.nav-item-link{
+  font-size:15px;
+  font-weight: 500;
+  color:#606261;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.icon {
+  font-size: 12px;
+  margin-left: -3px;
+  margin-top: 3px;
+}
+
+.signUpButton {
+  padding: 6.5px 12.8px;
+  font-size: 13px;
+  color: #202124;
+}
+
+.buyNowButton {
+  background-color: #09B850;
+  padding: 6.5px 12.8px;
+}
+
+.drp-item {
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+  font-size:15.5px;
+}
+
+.drp-item:hover {
+  color: rgb(9, 184, 80);
+
+}
+
+.dropdown-menu{
+  box-shadow: 0 0.125rem 0.25rem rgba(29, 58, 83, 0.15) !important;
+  border: 1px solid #dce0e5 !important;
+}
+
+.dropdown-item:hover{
+  background-color: black!important;
+}
+
+.decoration-pattern-container{
+  margin-top: -83px;
+  margin-left: -65px;
+}
+
+/* .main-heading{
+  font-family: "Instrument Sans", sans-serif !important;
+} */
+
+/* Hero Section Animation Curosor */
+.typed-cursor, .animate-text {
+  color:rgb( 9, 184, 80);
+}
+
+
+/* Media Queries */
+@media(max-width:1150px) {
+    .navListContainer{
+      margin-left: 0;
+    }
+    .icon {
+      margin-left: 5px;
+    }
+    .main-heading{
+      font-size:37px !important;
+    }
 }
