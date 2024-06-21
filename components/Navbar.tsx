@@ -1,11 +1,11 @@
 "use client"
 import Image from "next/image"
-import { useMemo } from "react";
+import { useEffect } from "react";
 import Logo from "@/assets/logo.svg"
 import DesignPattern from "@/assets/decoration-pattern.svg"
 
 const Navbar = () => {
-    useMemo(() => {
+    useEffect(() => {
         require("bootstrap/dist/js/bootstrap.bundle.min.js");
     }, []);
     return (
