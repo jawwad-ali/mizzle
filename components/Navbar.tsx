@@ -10,8 +10,8 @@ const Navbar = () => {
     }, []);
     return (
         <>
-            <div className="container mt-3 ps-3">
-                <nav className="navbar navbar-expand-lg navbar-light">
+            <div className="container ps-3 position-fixed top-0 end-0 start-0 shadow bg-white" style={{zIndex:10244}}>
+                <nav className="navbar mt-3 navbar-expand-lg navbar-light">
                     <a className="navbar-brand" href="#">
                         <Image className="logo ps-0" src={Logo} alt="Mizzle Logo" />
                     </a>

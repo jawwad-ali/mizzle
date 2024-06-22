@@ -53,14 +53,19 @@ export const companies = [
 
 export const YearsCustomers = [
     {
-        number:"10+",
-        text:"years of experience",
-        style:"text-center bg-dark text-white mb-0 text-capitalize rounded p-3",
-        inlinStyle:"height:150px"
+        number: "10+",
+        text: "years of experience",
+        style: "text-center bg-dark text-white mb-0 text-capitalize rounded p-3 px-4",
     },
     {
-        number:"1.2k+",
-        text:"happy customer",
-        style:"text-center rounded text-white text-center mb-0 text-capitalize bg-success p-3 "
+        number: "1.2k+",
+        text: "happy customer",
+        style: "text-center rounded text-white text-center mb-0 text-capitalize bg-success p-3 px-4"
     }
+]
+
+export const experienceBullets = [
+    { text: "Emphasis on ROI-driven solutions" },
+    { text: "Expert team with diverse skill" },
+    { text: "Proven track record of delivering resultss" }
 ]

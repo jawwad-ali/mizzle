@@ -47,7 +47,7 @@ const Companies = () => {
                     </Swiper>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 

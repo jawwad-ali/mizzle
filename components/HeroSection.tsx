@@ -29,7 +29,7 @@ const HeroSection = () => {
     }, [])
 
     return (
-        <div className="container mt-lg-5 pt-lg-5">
+        <div className="container mt-lg-5 pt-lg-5 z-index-2">
             <div className="row">
                 <div className="col-lg-7 mt-4 ps-0">
                     <span
