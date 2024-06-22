@@ -55,8 +55,8 @@ const OnlineExperience = () => {
                     </p>
 
                     {
-                        experienceBullets.map((data) => (
-                            <div className="d-flex ">
+                        experienceBullets.map((data,index) => (
+                            <div className="d-flex" key={index}>
                                 <i className="bi bi-patch-check-fill me-2" style={{ color: "rgb(9, 184, 80)" }}></i>
                                 <p className={`ms-2 ${inter.className}`} style={{ color: "rgb(32,33,36)" }} >{data.text}</p>
                             </div>
