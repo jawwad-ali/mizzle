@@ -6,7 +6,7 @@ import DesignPattern from "@/assets/decoration-pattern.svg"
 
 const Navbar = () => {
     useEffect(() => {
-        require("bootstrap/dist/js/bootstrap.bundle.min.js");
+        require("bootstrap/dist/js/bootstrap.bundle")
     }, []);
     return (
         <>
