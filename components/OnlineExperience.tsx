@@ -21,8 +21,8 @@ const OnlineExperience = () => {
                         </div>
                         <div className="col-lg-3 position-relative ms-4 d-flex gap-4" style={{ height: "140px; !important", width: "50px" }}>
                             {
-                                YearsCustomers.map((data) => (
-                                    <div className={`${data.style}`} >
+                                YearsCustomers.map((data,index) => (
+                                    <div className={`${data.style}`} key={index}>
                                         <h6 className={`${instrument_Sans.className} fw-bold h1`}>{data.number}</h6>
                                         <p className={`${inter.className} text-center mb-0 text-capitalize`}>{data.text}</p>
                                     </div>
