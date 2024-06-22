@@ -5,7 +5,6 @@ import { Instrument_Sans, Inter } from "next/font/google"
 import Image from 'next/image';
 import { data, images } from "../data"
 
-
 const instrument_Sans = Instrument_Sans({
     subsets: ["latin"]
 })
@@ -81,7 +80,7 @@ const HeroSection = () => {
 
 
                 {/* Right Side */}
-                <div className="col-lg-5 position-relative">
+                <div className="col-lg-5  position-relative">
                     {images.map((data, i) => (
                         <Image key={i} src={data.img} alt="Images" className={data.style} />
                     ))}
