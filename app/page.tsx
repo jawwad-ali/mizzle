@@ -1,6 +1,7 @@
 import Companies from "@/components/Companies";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import OnlineExperience from "@/components/OnlineExperience";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Companies />
+      <OnlineExperience />
     </>
-
   );
 }

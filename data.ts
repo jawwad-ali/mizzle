@@ -50,3 +50,17 @@ export const companies = [
     { company: CompanyFour },
     { company: CompanyTwo },
 ]
+
+export const YearsCustomers = [
+    {
+        number:"10+",
+        text:"years of experience",
+        style:"text-center bg-dark text-white mb-0 text-capitalize rounded p-3",
+        inlinStyle:"height:150px"
+    },
+    {
+        number:"1.2k+",
+        text:"happy customer",
+        style:"text-center rounded text-white text-center mb-0 text-capitalize bg-success p-3 "
+    }
+]

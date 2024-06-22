@@ -70,6 +70,16 @@
   height: 32px;
 }
 
+.digital-exp-one-image {
+  width: 284px;
+  height: 412px;
+}
+
+.two-img {
+  margin-top: 170px;
+  margin-left: -50px;
+}
+
 /* Media Queries */
 @media(max-width:1024px) {
   .navListContainer {
@@ -91,6 +101,5 @@
 
   .company-images {
     height: 150px;
-    background: red;
   }
 }
