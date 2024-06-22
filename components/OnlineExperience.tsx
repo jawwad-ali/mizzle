@@ -21,7 +21,7 @@ const OnlineExperience = () => {
                             <Image src={DigitalExpOne} alt="Digital Exp" className="img-fluid rounded digital-exp-one-image" />
                         </div>
 
-                        <div className="numbers-container position-relative mx-4 d-flex gap-4" style={{ height: "140px !important", width: "75px !important" }}>
+                        <div className="numbers-container position-relative mx-0 mx-md-4 d-flex gap-md-4 mt-2 mt-lg-0" style={{ height: "140px !important", width: "75px !important" }}>
                             {
                                 YearsCustomers.map((data, index) => (
                                     <div className={`${data.style} numbers-box`} key={index}>
@@ -55,7 +55,7 @@ const OnlineExperience = () => {
                     </p>
 
                     {
-                        experienceBullets.map((data,index) => (
+                        experienceBullets.map((data, index) => (
                             <div className="d-flex" key={index}>
                                 <i className="bi bi-patch-check-fill me-2" style={{ color: "rgb(9, 184, 80)" }}></i>
                                 <p className={`ms-2 ${inter.className}`} style={{ color: "rgb(32,33,36)" }} >{data.text}</p>

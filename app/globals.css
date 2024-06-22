@@ -78,7 +78,6 @@
 .second-image-div {
   margin-top: 170px;
   margin-left: -100px;
-
 }
 
 .two-img {
@@ -134,17 +133,16 @@
   .digital-exp-one-image {
     width: 400px !important;
     text-align: center;
-    margin-left: 55px;
+    /* margin-left: 55px; */
   }
 
   .numbers-container {
     display: flex;
     flex-direction: column;
-    background: red;
   }
 
   .numbers-box {
-    width: 350px !important;
+    width: 288px !important;
     margin: 20px 0;
   }
 
@@ -155,6 +153,8 @@
   }
 
   .two-img {
-    width: 75px;
+    width: 288px !important;
+    margin-left: -110px;
+    margin-top: -35px;
   }
 }

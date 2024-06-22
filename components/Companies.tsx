@@ -21,7 +21,7 @@ const Companies = () => {
                     <h5 className={`${instrument_Sans.className} fs-3 ps-lg-1 fw-bold`}>100+ Companies trust us</h5>
                 </div>
 
-                <div className="col-lg-9 d-flex justify-content-center align-items-center gap-5 overflow-hidden">
+                <div className="col-lg-9 d-flex justify-content-center align-items-center gap-lg-5 gap-0 overflow-hidden">
                     <Swiper
                         slidesPerView={5}
                         autoplay={true}
@@ -40,7 +40,7 @@ const Companies = () => {
                         }}
                     >
                         {companies.map((company, idx) => (
-                            <SwiperSlide key={idx} className="p-3">
+                            <SwiperSlide key={idx} className="p-md-3 p-0 ">
                                 <Image src={company.company} alt="Company" className="company-images" />
                             </SwiperSlide>
                         ))}
