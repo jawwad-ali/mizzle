@@ -12,8 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 const OnlineExperience = () => {
     return (
-        <div className="container experience position-relative" style={{ marginTop: " 100px " }}>
+        <div className="container experience position-relative" style={{ marginTop: "100px" }}>
             <div className="row">
+                {/* Left Side */}
                 <div className="col-lg-7">
                     <div className="d-flex left-side-container">
 
@@ -39,7 +40,7 @@ const OnlineExperience = () => {
                 </div>
 
                 {/* RIght Side */}
-                <div className="col-lg-5 ms-lg-0 ms-2 experience-right mt-5 mt-lg-0">
+                <div className="col-lg-5 ms-lg-0 ps-md-5 ps-lg-0 ms-2 experience-right mt-5 mt-lg-0">
                     <span
                         className="heading-color d-inline-block bg-light small rounded-3 px-3 py-2 "
                     // style={{ marginTop: 15 }}
@@ -53,16 +54,12 @@ const OnlineExperience = () => {
                     <p className={`${inter.className} pt-3 px-1 fw-normal`} style={{ color: "rgb(96,98,97)" }}>
                         Embrace a new era of digital success with Mizzle. Our team combines cutting-edge design with robust development to deliver websites that captivate and convert.
                     </p>
-
-                    {
-                        experienceBullets.map((data, index) => (
-                            <div className="d-flex" key={index}>
-                                <i className="bi bi-patch-check-fill me-2" style={{ color: "rgb(9, 184, 80)" }}></i>
-                                <p className={`ms-2 ${inter.className}`} style={{ color: "rgb(32,33,36)" }} >{data.text}</p>
-                            </div>
-                        ))
-                    }
-
+                    {experienceBullets.map((data, index) => (
+                        <div className="d-flex" key={index}>
+                            <i className="bi bi-patch-check-fill me-2" style={{ color: "rgb(9, 184, 80)" }}></i>
+                            <p className={`ms-2 ${inter.className}`} style={{ color: "rgb(32,33,36)" }} >{data.text}</p>
+                        </div>
+                    ))}
                     <a href="about-v1.html" className="btn btn-dark mb-0 mt-3">Discover more</a>
                 </div>
             </div>

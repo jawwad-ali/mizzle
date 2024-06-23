@@ -3,6 +3,11 @@ import Image from "next/image"
 import { useEffect } from "react";
 import Logo from "@/assets/logo.svg"
 import DesignPattern from "@/assets/decoration-pattern.svg"
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+    subsets: ["latin"]
+})
 
 const Navbar = () => {
     useEffect(() => {
@@ -10,13 +15,13 @@ const Navbar = () => {
     }, []);
     return (
         <>
-            <div className="container ps-3 position-fixed top-0 end-0 start-0 shadow bg-white" style={{zIndex:10244}}>
-                <nav className="navbar mt-3 navbar-expand-lg navbar-light">
+            <div className="container ps-3 position-fixed top-0 end-0 start-0 bg-white" style={{ zIndex: 10244 }}>
+                <nav className="navbar mt-3 navbar-expand-xl navbar-light">
                     <a className="navbar-brand" href="#">
                         <Image className="logo ps-0" src={Logo} alt="Mizzle Logo" />
                     </a>
                     <button
-                        className="navbar-toggler"
+                        className="navbar-toggler order-1"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent"
@@ -177,15 +182,15 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="d-none d-lg-flex justify-content-end align-items-center gap-1">
+                    <div className={`${inter.className} d-none d-lg-flex justify-content-end align-items-center gap-1`}>
                         <i className="bi bi-circle-half fs-5 " />
 
-                        <button className="btn btn-sm btn-light me-1 signUpButton" style={{ padding: "6.5px 12.8px" }}>
+                        <button className="btn btn-sm btn-light me-1 signUpButton" style={{ padding: "6.5px 12.8px", fontWeight: 500, fontSize: "13px" }}>
                             <i className="bi bi-person-circle me-2" />
-                            Sign Up
+                            Sign up
                         </button>
-                        <button className="border-0 btn btn-sm btn-success me-1 buyNowButton" style={{ padding: "6.5px 12.8px", backgroundColor: "#09B850" }}>
-                            Buy Now!
+                        <button className="border-0 btn btn-sm btn-success me-1 buyNowButton" style={{ padding: "6.5px 12.8px", backgroundColor: "#09B850", fontWeight: 500, fontSize: "13px" }}>
+                            Buy now!
                         </button>
                     </div>
                 </nav>

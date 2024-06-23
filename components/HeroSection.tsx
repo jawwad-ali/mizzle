@@ -3,7 +3,7 @@ import Typed from 'typed.js';
 import { useEffect, useRef } from 'react';
 import { Instrument_Sans, Inter } from "next/font/google"
 import Image from 'next/image';
-import { data, images } from "../data"
+import { data, heroSectionImages } from "../data"
 
 const instrument_Sans = Instrument_Sans({
     subsets: ["latin"]
@@ -29,12 +29,12 @@ const HeroSection = () => {
     }, [])
 
     return (
-        <div className="container mt-lg-5 pt-lg-5 z-index-2">
+        <div className="container mt-lg-5 pt-lg-5 z-index-2 hero-section">
             <div className="row">
-                <div className="col-lg-7 mt-4 ps-0">
+                <div className="col-lg-7 mt-4 ps-0 pt-lg-5">
                     <span
                         className="heading-color d-inline-block bg-light small rounded-3 px-3 py-2 ms-3"
-                        style={{ marginTop: 15 }}
+                        style={{ marginTop: "50px" }}
                     >
                         🤩 Award-winning digital services
                     </span>
@@ -56,7 +56,7 @@ const HeroSection = () => {
                     <form className="col-md-10 bg-body border rounded-2 position-relative p-2 mt-4 mt-md-5 mx-3">
                         <div className="input-group">
                             <input className="form-control focus-shadow-none border-0 me-1" type="email" placeholder="Enter your email address" />
-                            <button type="button" className={`${inter.className} fw-bold btn btn-dark rounded-2 mb-0`}>Start trial!</button>
+                            <button type="button" className={`${inter.className} fw-bold btn btn-dark rounded-2 mb-0`}>Start trial!</button> 
                         </div>
                     </form>
 
@@ -80,8 +80,8 @@ const HeroSection = () => {
 
 
                 {/* Right Side */}
-                <div className="col-lg-5  position-relative">
-                    {images.map((data, i) => (
+                <div className="col-lg-5 hero-section-image-container position-relative">
+                    {heroSectionImages.map((data, i) => (
                         <Image key={i} src={data.img} alt="Images" className={data.style} />
                     ))}
                 </div>

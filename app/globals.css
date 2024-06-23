@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .logo {
   height: 40px;
   width: 136px;
@@ -55,9 +61,9 @@
   margin-left: -65px;
 }
 
-/* .main-heading{
-  font-family: "Instrument Sans", sans-serif !important;
-} */
+.hero-section-image-container {
+  margin-top: 70px !important;
+}
 
 /* Hero Section Animation Curosor */
 .typed-cursor,
@@ -89,7 +95,44 @@
   margin-left: -150px !important;
 }
 
+/* Specialization */
+.specialization {
+  margin: 80px 0;
+  background-color: #202124;
+  padding-bottom: 100px;
+}
 
+.specialization-header {
+  padding-top: 80px 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.specialization-header span {
+  background-color: #292a2d !important;
+}
+
+.card {
+  background-color: #292a2d !important;
+  padding: 5px 5px 0;
+}
+
+.icon-div {
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  top: -35px;
+  color: #09B850 !important;
+}
+
+.card-footer {
+  color: #09B850 !important;
+  border: 0 !important;
+  margin-top: -20px !important;
+}
 
 /* Media Queries */
 @media(max-width:800px) {
@@ -125,15 +168,20 @@
 
 
 @media(max-width:425px) {
+  .hero-section {
+    margin-top: 30px;
+  }
+
   .left-side-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .digital-exp-one-image {
     width: 400px !important;
     text-align: center;
-    /* margin-left: 55px; */
   }
 
   .numbers-container {
@@ -144,10 +192,12 @@
   .numbers-box {
     width: 288px !important;
     margin: 20px 0;
+    margin-left: -100px;
   }
 
+
   .second-image-div {
-    margin: 0;
+    margin-left: 125px;
     padding: 0;
     margin-top: 150px;
   }
@@ -156,5 +206,20 @@
     width: 288px !important;
     margin-left: -110px;
     margin-top: -35px;
+  }
+
+  .hero-section-image-container {
+    margin-top: 0px !important;
+  }
+
+  .experience-right {
+    background-color: purple;
+  }
+}
+
+@media(min-width:1440px) {
+  .companies {
+    position: relative;
+    padding-top: 150px !important;
   }
 }

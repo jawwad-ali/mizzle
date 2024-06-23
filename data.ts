@@ -3,6 +3,7 @@ import Award from "@/assets/award.svg"
 import HeroSectionImageOne from "@/assets/hero-section.jpg"
 import HeroSectionRatingImage from "@/assets/hero-section-rating.png"
 import HeroSectionImageThree from "@/assets/hero-section-three.png"
+
 import CompanyOne from "@/assets/company-one.svg"
 import CompanyTwo from "@/assets/company-two.svg"
 import CompanyThree from "@/assets/company-three.svg"
@@ -23,7 +24,7 @@ export const data = [
 ]
 
 // Hero Section (Left) Image
-export const images = [
+export const heroSectionImages = [
     {
         img: HeroSectionImageOne,
         style: "img-fluid rounded ms-1 mt-0"
@@ -34,7 +35,7 @@ export const images = [
     },
     {
         img: HeroSectionImageThree,
-        style: "rounded position-absolute ms-lg-5 ms-0"
+        style: "rounded position-absolute ms-0"
     },
 ]
 
@@ -54,13 +55,13 @@ export const companies = [
 export const YearsCustomers = [
     {
         number: "10+",
-        text: "years of experience",
-        style: "text-center bg-dark text-white mb-0 text-capitalize rounded p-3 px-4",
+        text: "Years of experience",
+        style: "text-center bg-dark text-white mb-0 rounded p-3 px-4",
     },
     {
-        number: "1.2k+",
-        text: "happy customer",
-        style: "text-center rounded text-white text-center mb-0 text-capitalize bg-success p-3 px-4"
+        number: "1.2K",
+        text: "Happy customer",
+        style: "text-center rounded text-white text-center mb-0 bg-success p-3 px-4"
     }
 ]
 
@@ -68,4 +69,42 @@ export const experienceBullets = [
     { text: "Emphasis on ROI-driven solutions" },
     { text: "Expert team with diverse skill" },
     { text: "Proven track record of delivering resultss" }
+]
+
+
+export const specialization = [
+    {
+        heading: "Digital Marketing",
+        text: "Growing brands online through digital channels.",
+    },
+    {
+        heading: "Product Design",
+        text: "Creating products that users love and businesses need .",
+    },
+    {
+        heading: "Web Design",
+        text: "Designing websites that are visually appealing & user-friendly.",
+    },
+    {
+        heading: "UI/UX Design",
+        text: "Creating user interfaces that are both efficient and enjoyable.",
+    },
+    {
+        heading: "Business Strategy",
+        text: "Developing and executing plans to achieve business goals.",
+    },
+    {
+        heading: "Research",
+        text: "Gathering and analyzing data to inform decision-making.",
+    },
+    {
+        heading: "Web Development",
+        text: "Building and maintaining websites and web applications."
+    },
+    {
+        heading: "Brand Design",
+        text: "Creating brands that are unique, memorable, and meaningful."
+    },
+
+
 ]
