@@ -105,6 +105,14 @@ export const specialization = [
         heading: "Brand Design",
         text: "Creating brands that are unique, memorable, and meaningful."
     },
+]
 
-
+export const headings = [
+    {
+        subtitle:"🤩 Award-winning digital services",
+        heading:"Creative studio focused on"
+    },
+    {
+        
+    }
 ]

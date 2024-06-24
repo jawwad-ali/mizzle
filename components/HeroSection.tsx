@@ -3,7 +3,8 @@ import Typed from 'typed.js';
 import { useEffect, useRef } from 'react';
 import { Instrument_Sans, Inter } from "next/font/google"
 import Image from 'next/image';
-import { data, heroSectionImages } from "../data"
+import { data, headings, heroSectionImages } from "../data"
+import Heading from './Heading';
 
 const instrument_Sans = Instrument_Sans({
     subsets: ["latin"]
@@ -30,38 +31,30 @@ const HeroSection = () => {
 
     return (
         <div className="container mt-lg-5 pt-lg-5 z-index-2 hero-section">
-            <div className="row">
-                <div className="col-lg-7 mt-4 ps-0 pt-lg-5">
-                    <span
-                        className="heading-color d-inline-block bg-light small rounded-3 px-3 py-2 ms-3"
-                        style={{ marginTop: "50px" }}
-                    >
-                        🤩 Award-winning digital services
-                    </span>
-                    <h1
-                        className={`${instrument_Sans.className} lh-base pt-3 fw-bold main-heading ps-3`}
-                        style={{ fontSize: "57.6px" }}
-                    >
-                        Creative studio focused on <br />
-                        {/* Element to contain animated typing */}
-                        <span ref={el} className='animate-text' />
+            <div className="row"> 
+                <div className="col-lg-7 mt-4 ps-3 hero-section-left-side"
+                >
+                    {/* Heading Component */}
+                    <Heading subtitle='🤩 Award-winning digital services' heading='Creative studio focused on' fontSize='57.6px' />
 
-                    </h1>
-                    <p className={`ps-3`} style={{ color: "rgb(96, 98, 97)", marginTop: 38 }}>
+                    {/* Element to contain animated typing */}
+                    <span ref={el} className='animate-text fw-bold' />
+
+                    <p style={{ color: "rgb(96, 98, 97)", marginTop: 32 }}>
                         From concept to execution, we deliver web designs that make an impact.
                         Let your brand shine with our innovative and visually stunning websites.
                     </p>
 
                     {/* Input Field */}
-                    <form className="col-md-10 bg-body border rounded-2 position-relative p-2 mt-4 mt-md-5 mx-3">
+                    < form className="col-md-10 bg-body border rounded-2 position-relative p-2 mt-4 mt-md-5" >
                         <div className="input-group">
                             <input className="form-control focus-shadow-none border-0 me-1" type="email" placeholder="Enter your email address" />
-                            <button type="button" className={`${inter.className} fw-bold btn btn-dark rounded-2 mb-0`}>Start trial!</button> 
+                            <button type="button" className={`${inter.className} fw-bold btn btn-dark rounded-2 mb-0`}>Start trial!</button>
                         </div>
                     </form>
 
                     {/* Two Sections in Hero Section */}
-                    <div className="d-block d-md-flex p-3 pe-lg-0 pe-5 gap-3 mb-5 justify-content-between">
+                    <div className="d-block d-md-flex pt-4 pe-lg-0 pe-5 gap-3 mb-5 justify-content-between">
                         {data.map((d, i) => (
                             <div className="col-lg-6 me-0 mt-3" key={i}>
                                 <div className='d-flex'>
@@ -86,7 +79,7 @@ const HeroSection = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

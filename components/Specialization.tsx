@@ -1,5 +1,6 @@
 import { specialization } from "@/data"
 import { Instrument_Sans, Inter } from "next/font/google"
+import Heading from "./Heading"
 const inter = Inter({
     subsets: ["latin"]
 })
@@ -10,16 +11,12 @@ const Specialization = () => {
     return (
         <div className="specialization">
             {/* Specialization Header */}
-            <div className="d-flex justify-content-center flex-column text-white align-items-center specialization-header">
-                <span
-                    className={`${inter.className} heading-color text-white d-inline-block bg-light small rounded-3 px-3 py-2 ms-3`}
-                    style={{ marginTop: "50px" }}
-                >
-                    🚀 Innovative solutions, Measurable results
-                </span>
-                <h2 className={`${ins.className} fw-bold display-5 mt-4 text-center`}>
-                    We specialize in the following services
-                </h2>
+            <div className="d-flex justify-content-center flex-column text-white align-items-center specialization-header text-center"
+            >
+                <Heading
+                    subtitle="🚀 Innovative solutions, Measurable results"
+                    heading="We specialize in the following services"
+                    fontSize="44px" />
             </div>
 
             {/* Main */}
@@ -30,7 +27,7 @@ const Specialization = () => {
                             <div className="d-flex justify-content-between">
 
                                 {/* Card Body */}
-                                <div className="card mb-4">
+                                <div className="card mb-4 spicialization-card">
                                     <div className="card-body position-relative">
                                         <div className="icon-div position-absolute rounded-pill bg-white">
                                             <i className="bi bi-stack icon fa-fw fs-4 text-center"></i>

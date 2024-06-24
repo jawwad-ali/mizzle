@@ -44,7 +44,6 @@ body {
 
 .drp-item:hover {
   color: rgb(9, 184, 80);
-
 }
 
 .dropdown-menu {
@@ -57,8 +56,12 @@ body {
 }
 
 .decoration-pattern-container {
-  margin-top: -83px;
+  margin-top: -50px;
   margin-left: -65px;
+}
+
+.hero-section-left-side {
+  padding-top: 40px !important;
 }
 
 .hero-section-image-container {
@@ -69,6 +72,7 @@ body {
 .typed-cursor,
 .animate-text {
   color: rgb(9, 184, 80);
+  font-size: 57.6px;
 }
 
 .company-images {
@@ -112,7 +116,7 @@ body {
   background-color: #292a2d !important;
 }
 
-.card {
+.spicialization-card {
   background-color: #292a2d !important;
   padding: 5px 5px 0;
 }
@@ -133,6 +137,22 @@ body {
   border: 0 !important;
   margin-top: -20px !important;
 }
+
+/* specialization ends */
+
+/* Plan Start */
+.card-image {
+  width: 120px;
+  height: 156px;
+}
+
+.boss-mode {
+  font-size: 12px;
+  padding: 4.2px 7.8px
+}
+
+/* Plan End */
+
 
 /* Media Queries */
 @media(max-width:800px) {
@@ -164,8 +184,19 @@ body {
   .experience {
     margin-top: 150px !important;
   }
-}
 
+  .third-card {
+    height: 350px;
+  }
+
+  .plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
 
 @media(max-width:425px) {
   .hero-section {
@@ -195,7 +226,6 @@ body {
     margin-left: -100px;
   }
 
-
   .second-image-div {
     margin-left: 125px;
     padding: 0;
@@ -212,8 +242,8 @@ body {
     margin-top: 0px !important;
   }
 
-  .experience-right {
-    background-color: purple;
+  .animate-text {
+    font-size: 45px;
   }
 }
 
