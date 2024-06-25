@@ -9,6 +9,16 @@ import CompanyTwo from "@/assets/company-two.svg"
 import CompanyThree from "@/assets/company-three.svg"
 import CompanyFour from "@/assets/company-four.svg"
 import CompanyFive from "@/assets/company-five.svg"
+import ClientOne from "@/assets/clientOne.jpg"
+import ClientTwo from "@/assets/clientTwi.jpg"
+import ClientThree from "@/assets/clientThree.jpg"
+import ClientFour from "@/assets/clientFour.jpg"
+
+type FooterProps = {
+    heading: string
+    items: string[]
+    // [x:string]:string
+}
 
 export const data = [
     {
@@ -107,12 +117,36 @@ export const specialization = [
     },
 ]
 
-export const headings = [
+export const testimonials = [
     {
-        subtitle:"🤩 Award-winning digital services",
-        heading:"Creative studio focused on"
+        review: "Mizzle is the perfect theme for businesses that want to create a stylish and functional website.",
+        clientImage: ClientOne,
+        clientName: "Ali Jawwad"
     },
     {
-        
+        review: "I highly recommend Mizzle to anyone looking for a high-quality Bootstrap theme.",
+        clientImage: ClientTwo,
+        clientName: "Virat Kohli"
+    },
+    {
+        review: "The best Bootstrap theme we've ever used - it's easy to customize and comes with all the features we need.",
+        clientImage: ClientThree,
+        clientName: "Kane Williamson"
+    },
+    {
+        review: "Webestica helped us create a stunning website that reflects our brand perfectly.",
+        clientImage: ClientFour,
+        clientName: "Steve Smith"
     }
+]
+
+export const FooterItems: FooterProps[] = [
+    {
+        heading: "Quick Links",
+        items: ["About us", "Contact us", "Career","Career detail","Become a partner","Sign Up","Sign In"]
+    },
+    {
+        heading: "Community",
+        items: ["Documents", "Supports", "Faqs","Privacy Policy","News and blogs","Terms and condition"]
+    },
 ]

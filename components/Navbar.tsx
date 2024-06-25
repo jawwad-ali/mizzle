@@ -199,7 +199,7 @@ const Navbar = () => {
             </div>
 
             {/* <!-- Decoration pattern --> */}
-            <div className="d-none d-lg-block position-relative" style={{zIndex:10245}}>
+            <div className="d-none d-lg-block position-relative" style={{ zIndex: 10245 }}>
                 <div className="position-absolute decoration-pattern-container">
                     <Image src={DesignPattern} alt="Decoration Pattern" />
                 </div>

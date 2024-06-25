@@ -21,7 +21,7 @@ const Companies = () => {
                     <h5 className={`${instrument_Sans.className} fs-3 ps-lg-1 fw-bold`}>100+ Companies trust us</h5>
                 </div>
 
-                <div className="col-lg-9 d-flex justify-content-center align-items-center gap-lg-5 gap-0 overflow-hidden">
+                <div className="col-lg-9 d-flex justify-content-center align-items-center gap-lg-5 mx-3 mx-lg-0 gap-0 overflow-hidden">
                     <Swiper
                         slidesPerView={5}
                         autoplay={true}
