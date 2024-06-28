@@ -21,18 +21,18 @@ const Footer = () => {
                         <div className="text-white">
                             <Image src={FooterLogo} alt="Logo" className="logo" />
                             <p className={`${inter.className} pt-4`} style={{ color: "#C5C6CC" }}>
-                                A Bootstrap theme that's both stylish and functional, perfect for any type of technology or corporate website.
+                                A Bootstrap theme that &lsquo; both stylish and functional, perfect for any type of technology or corporate website.
                             </p>
                         </div>
                     </div>
 
-                    {FooterItems.map((data,index) => (
+                    {FooterItems.map((data, index) => (
                         <div key={index} className="col-lg-3 col-md-12 text-start ps-lg-4 ps-0 mt-5 mt-lg-0">
                             <div className="d-flex flex-column">
                                 <h4 className={` text-white ps-3 fw-bold fs-5 ${ins.className}`}>{data.heading}</h4>
                                 <ul className="list-group">
-                                    {data.items.map((item) => (
-                                        <li className={`${inter.className} list-group-item border-0 bg-transparent`} style={{ color: "#C5C6CC" }}>{item}</li>
+                                    {data.items.map((item, index) => (
+                                        <li key={index} className={`${inter.className} list-group-item border-0 bg-transparent`} style={{ color: "#C5C6CC" }}>{item}</li>
                                     ))}
                                 </ul>
                             </div>
