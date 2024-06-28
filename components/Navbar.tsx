@@ -15,7 +15,7 @@ const Navbar = () => {
     }, []);
     return (
         <>
-            <div className="container-fluid pt-3 ps-lg-4 position-fixed top-0 end-0 start-0 bg-white" style={{ zIndex: 10244 }}>
+            <div className="container-fluid pt-3 ps-lg-4 position-relative top-0 end-0 start-0 bg-white" >
                 <div className="container">
                     <nav className="navbar navbar-expand-xl navbar-light">
                         <a className="navbar-brand" href="#">

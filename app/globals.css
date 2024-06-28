@@ -5,61 +5,6 @@
 
 }
 
-/* Loading Animation */
-/* .loading {
-  height: 100%;
-  width: 100%;
-  background-color: green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  z-index: 110000;
-}
-
-.follow {
-  position: absolute;
-  background-color: white;
-  left: 0;
-  width: 0;
-  height: 2px;
-  z-index: 20000000;
-}
-
-.progress-bar {
-  position: absolute;
-  left: 0;
-  height: 2px;
-  background-color: black !important;
-  transition: 0.4s ease-out;
-  width: 0;
-}
-
-.count {
-  position: absolute;
-  font-size: 130px;
-  color: white;
-  font-weight: 500;
-  transform: translateY(-15px);
-}
-
-.content {
-  background-color: white;
-  z-index: 200000001;
-  height: 100px;
-  width: 0;
-  overflow: hidden;
-}
-
-.hero-section{
-  opacity: 0;
-  display: none;
-  opacity: 2000000015;
-} */
-
-/* Loading Animation Ends */
-
 .logo {
   height: 40px;
   width: 136px;
@@ -110,16 +55,12 @@
 }
 
 .decoration-pattern-container {
-  margin-top: -50px;
+  margin-top: -81px;
   margin-left: -65px;
 }
 
 .hero-section-left-side {
-  padding-top: 40px !important;
-}
-
-.hero-section-image-container {
-  margin-top: 70px !important;
+  margin-top: -12px !important;
 }
 
 /* Hero Section Animation Curosor */

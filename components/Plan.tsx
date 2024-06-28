@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Heading from "./Heading"
 import BossCardImage from "@/assets/boss.png"
-import { Instrument_Sans, Instrument_Serif, Inter } from "next/font/google"
+import { Instrument_Sans, Inter } from "next/font/google"
 
 const inter = Inter({
     subsets: ['latin']

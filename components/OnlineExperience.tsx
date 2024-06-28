@@ -24,14 +24,12 @@ const OnlineExperience = () => {
                         </div>
 
                         <div className="numbers-container position-relative mx-0 mx-md-4 d-flex gap-md-4 mt-2 mt-lg-0" style={{ height: "140px !important", width: "75px !important" }}>
-                            {
-                                YearsCustomers.map((data, index) => (
-                                    <div className={`${data.style} numbers-box`} key={index}>
-                                        <h6 className={`${instrument_Sans.className} fw-bold h1`}>{data.number}</h6>
-                                        <p className={`${inter.className} text-center mb-0 text-capitalize`}>{data.text}</p>
-                                    </div>
-                                ))
-                            }
+                            {YearsCustomers.map((data, index) => (
+                                <div className={`${data.style} numbers-box`} key={index}>
+                                    <h6 className={`${instrument_Sans.className} fw-bold h1`}>{data.number}</h6>
+                                    <p className={`${inter.className} text-center mb-0 text-capitalize`}>{data.text}</p>
+                                </div>
+                            ))}
                         </div>
                         <div className="digital-exp-one-image second-image-div position-relative col-lg-6">
                             <Image src={DigitalExpTwo} alt="Digital Exp" className="rounded two-img" />

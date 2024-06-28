@@ -22,9 +22,9 @@ const Specialization = () => {
             {/* Main */}
             <div className="container">
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-5 gy-md-7 mt-3">
-                    {specialization.map((data) => (
+                    {specialization.map((data,index) => (
                         <>
-                            <div className="d-flex justify-content-between">
+                            <div className="d-flex justify-content-between" key={index}>
 
                                 {/* Card Body */}
                                 <div className="card mb-4 spicialization-card">

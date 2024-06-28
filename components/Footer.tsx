@@ -26,8 +26,8 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {FooterItems.map((data) => (
-                        <div className="col-lg-3 col-md-12 text-start ps-lg-4 ps-0 mt-5 mt-lg-0">
+                    {FooterItems.map((data,index) => (
+                        <div key={index} className="col-lg-3 col-md-12 text-start ps-lg-4 ps-0 mt-5 mt-lg-0">
                             <div className="d-flex flex-column">
                                 <h4 className={` text-white ps-3 fw-bold fs-5 ${ins.className}`}>{data.heading}</h4>
                                 <ul className="list-group">

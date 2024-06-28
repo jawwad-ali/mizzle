@@ -50,8 +50,8 @@ const Testimonials = () => {
                                     }
                                 }}
                             >
-                                {testimonials.map((data) => (
-                                    <SwiperSlide>
+                                {testimonials.map((data,index) => (
+                                    <SwiperSlide key={index}>
                                         <Image src={Stars} alt="Stars" className="rounded" />
                                         <p className={`${inter.className} pt-3 review-text`}>{data.review}</p>
 

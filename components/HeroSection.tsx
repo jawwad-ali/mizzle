@@ -38,7 +38,7 @@ const HeroSection = () => {
         <>
             <div className="container mt-lg-5 pt-lg-5 hero-section">
                 <div className="row">
-                    <div className="col-lg-7 mt-4 ps-3 hero-section-left-side"
+                    <div className="col-lg-7 hero-section-left-side"
                     >
                         {/* Heading Component */}
                         <Heading subtitle='🤩 Award-winning digital services' heading='Creative studio focused on' fontSize='57.6px' />
