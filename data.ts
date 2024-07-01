@@ -78,7 +78,7 @@ export const YearsCustomers = [
 export const experienceBullets = [
     { text: "Emphasis on ROI-driven solutions" },
     { text: "Expert team with diverse skill" },
-    { text: "Proven track record of delivering resultss" }
+    { text: "Proven track record of delivering results" }
 ]
 
 

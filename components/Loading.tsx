@@ -1,14 +1,15 @@
 "use client"
-
 import { useEffect, useState } from 'react'
 import { gsap, CSSPlugin, Expo } from 'gsap';
 import "./loading.css"
-gsap.registerPlugin(CSSPlugin)
 
 const Loading = () => {
 
     const [count, setCount] = useState(0);
     useEffect(() => {
+        // Registering the GSAP in useEffects after the component renders 
+        gsap.registerPlugin(CSSPlugin)
+
         const interval = setInterval(() => {
             setCount(prevCount => {
                 if (prevCount < 100) {
@@ -24,55 +25,55 @@ const Loading = () => {
         return () => clearInterval(interval);
     }, []);
 
-    useEffect(() => {
-        // Animation
-        const reveal = () => {
-            const tl = gsap.timeline({
-                onComplete: () => {
-                    console.log("Completed");
-                }
+    // Animation
+    const reveal = () => {
+        const tl = gsap.timeline({
+            onComplete: () => {
+                console.log("Completed");
+            }
+        })
+        tl.to(".follow", {
+            width: "100%",
+            delay: 0.7,
+            duration: 1.2,
+            ease: Expo.easeInOut
+        })
+            .to(".hide", {
+                opacity: 0,
+                duration: 1.2
             })
-            tl.to(".follow", {
+            .to(".hide", {
+                display: "none",
+                duration: 1.2
+            })
+            .to(".follow", {
+                height: "100%",
+                duration: 0.5,
+                delay: 0.5,
+                ease: Expo.easeOut
+            })
+            .to(".content", {
                 width: "100%",
-                delay: 0.7,
-                duration: 1.2,
-                ease: Expo.easeInOut
+                // ease: Expo.easeIn,
+                ease: Expo.easeInOut,
+                delay: 0.2,
+                duration: 0.12
+                // duration: 0.1
             })
-                .to(".hide", {
-                    opacity: 0,
-                    duration: 1.2
-                })
-                .to(".hide", {
-                    display: "none",
-                    duration: 1.2
-                })
-                .to(".follow", {
-                    height: "100%",
-                    duration: 0.3,
-                    delay: 0.5,
-                    ease: Expo.easeOut
-                })
-                .to(".content", {
-                    width: "100%",
-                    ease: Expo.easeInOut,
-                    delay: 0.2,
-                    duration: 0.1
-                })
-                .to(".main", {
-                    display: "block",
-                    duration: 0.2,
-                    ease: Expo.easeIn,
-                })
-                .to(".main", {
-                    opacity: 2,
-                    duration: 0.1,
-                    ease: Expo.easeIn,
-                    stagger: 1,
-                    // color: "black",
-                })
-        }
-        reveal()
-    }, [])
+            .to(".main", {
+                display: "block",
+                duration: 0.1,
+                // ease: Expo.easeIn,
+            })
+            .to(".main", {
+                opacity: 1,
+                duration: 1.5,
+                ease: Expo.easeOut,
+                stagger: 1,
+                // color: "black",
+            })
+    }
+    reveal()
 
     return (
         <div>

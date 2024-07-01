@@ -37,8 +37,8 @@ const OnlineExperience = () => {
                     </div>
 
                 </div>
-                {/* RIght Side */}
-                <div className="col-lg-5 ms-0 ms-lg-0 ps-md-5 ps-lg-0 px-3 experience-right mt-5 mt-lg-0">
+                {/* Right Side */}
+                <div className="col-lg-5 ms-0 ms-lg-0 ps-md-5 ps-xl-0 px-3 experience-right mt-5 mt-lg-0">
                     <Heading
                         subtitle="🤝 Your gateway to digital success"
                         heading="Defining the future of online experiences!"

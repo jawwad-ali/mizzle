@@ -14,7 +14,7 @@
 .follow {
     position: absolute;
     /* background-color: #f7f7f78f; */
-    background-color: orange;
+    background-color: rgb(63, 230, 63);
     left: 0;
     width: 0;
     height: 2px;

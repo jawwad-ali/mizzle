@@ -1,8 +1,7 @@
-  body {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 .logo {
@@ -91,7 +90,8 @@
 }
 
 .experience-right {
-  margin-left: -150px !important;
+  /* margin-left: -150px !important; */
+  /* background-color: red; */
 }
 
 /* Specialization */
