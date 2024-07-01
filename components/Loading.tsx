@@ -9,7 +9,8 @@ const Loading = () => {
     useEffect(() => {
         // Registering the GSAP in useEffects after the component renders 
         gsap.registerPlugin(CSSPlugin)
-
+    }, [])
+    useEffect(() => {
         const interval = setInterval(() => {
             setCount(prevCount => {
                 if (prevCount < 100) {
