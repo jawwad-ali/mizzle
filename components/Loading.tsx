@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import { gsap, CSSPlugin, Expo } from 'gsap';
-gsap.registerPlugin(CSSPlugin)
 import "./loading.css"
+gsap.registerPlugin(CSSPlugin)
 
 const Loading = () => {
 
@@ -24,58 +24,59 @@ const Loading = () => {
         return () => clearInterval(interval);
     }, []);
 
-    // Animation
-    const reveal = () => {
-        const tl = gsap.timeline({
-            onComplete: () => {
-                console.log("Completed");
-            }
-        })
-        tl.to(".follow", {
-            width: "100%",
-            delay: 0.7,
-            duration: 1.2,
-            ease: Expo.easeInOut
-        })
-            .to(".hide", {
-                opacity: 0,
-                duration: 1.2
+    useEffect(() => {
+        // Animation
+        const reveal = () => {
+            const tl = gsap.timeline({
+                onComplete: () => {
+                    console.log("Completed");
+                }
             })
-            .to(".hide", {
-                display: "none",
-                duration: 1.2
-            })
-            .to(".follow", {
-                height: "100%",
-                duration: 0.3,
-                delay: 0.5,
-                ease: Expo.easeOut
-            })
-            .to(".content", {
+            tl.to(".follow", {
                 width: "100%",
-                ease: Expo.easeInOut,
-                delay: 0.2,
-                duration: 0.1
+                delay: 0.7,
+                duration: 1.2,
+                ease: Expo.easeInOut
             })
-            .to(".main", {
-                display: "block",
-                duration: 0.2,
-                ease: Expo.easeIn,
-            })
-            .to(".main", {
-                opacity: 2,
-                duration: 0.1,
-                ease: Expo.easeIn,
-                stagger: 1,
-                // color: "black",
-            })
-    }
-    reveal()
+                .to(".hide", {
+                    opacity: 0,
+                    duration: 1.2
+                })
+                .to(".hide", {
+                    display: "none",
+                    duration: 1.2
+                })
+                .to(".follow", {
+                    height: "100%",
+                    duration: 0.3,
+                    delay: 0.5,
+                    ease: Expo.easeOut
+                })
+                .to(".content", {
+                    width: "100%",
+                    ease: Expo.easeInOut,
+                    delay: 0.2,
+                    duration: 0.1
+                })
+                .to(".main", {
+                    display: "block",
+                    duration: 0.2,
+                    ease: Expo.easeIn,
+                })
+                .to(".main", {
+                    opacity: 2,
+                    duration: 0.1,
+                    ease: Expo.easeIn,
+                    stagger: 1,
+                    // color: "black",
+                })
+        }
+        reveal()
+    }, [])
 
     return (
         <div>
             <div className="loading">
-
                 <div className="follow"></div>
 
                 <div className="progress-bar hide" style={{ width: count + "%" }}></div>
